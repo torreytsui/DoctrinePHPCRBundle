@@ -503,7 +503,7 @@ class DoctrinePHPCRExtension extends AbstractDoctrineExtension
             'mapping' => true,
         ];
         $documentManager['mappings']['__App__'] = [
-            'dir' => dirname($container->getParameter('kernel.root_dir').'/Document'),
+            'dir' => $container->getParameter('kernel.root_dir').'/Document',
             'type' => 'annotation',
             'prefix' => 'App\Document',
             'is_bundle' => false,
